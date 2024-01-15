@@ -1,0 +1,20 @@
+[
+  {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "example",
+      "perspective": "admin",
+      "section": "home",
+      "name": "%plugin__jerolimov-console-template~Plugin Example%",
+      "href": "/example"
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "path": "/example",
+      "exact": true,
+      "component": { "$codeRef": "examples.ExamplePage" }
+    }
+  }
+]

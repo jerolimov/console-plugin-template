@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "name": "@jerolimov/console-template",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Christoph Jerolimov",
+  "consolePlugin": {
+    "name": "jerolimov-console-template",
+    "version": "0.1.0",
+    "exposedModules": {
+      "examples": "./examples"
+    },
+    "dependencies": {
+      "@console/pluginAPI": "*"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "webpack build --mode=production",
+    "i18n": "rm -rf locales && npm run i18n:update",
+    "i18n:update": "i18next --config i18next-parser.config.js",
+    "i18n:check": "i18next --fail-on-update --config i18next-parser.config.js",
+    "start": "webpack serve",
+    "test": "npm run i18n:check",
+    "webpack": "webpack"
+  },
+  "devDependencies": {
+    "@openshift-console/dynamic-plugin-sdk": "^0.0.21",
+    "@openshift-console/dynamic-plugin-sdk-webpack": "^0.0.11",
+    "@types/react": "^18.2.47",
+    "@types/react-helmet": "^6.1.11",
+    "i18next-parser": "^8.12.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "peerDependencies": {
+    "@patternfly/react-core": "^4.278.1",
+    "react": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^14.0.0"
+  }
+}
