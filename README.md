@@ -1,5 +1,11 @@
 # An alternative OpenShift Console plugin template
 
+## Why?
+
+* To learn
+* To have a playground to build mono-repo projects with more then one frontend or with an backend
+* To use less dependencies in the origin template (that's a difficult goal and is more a tradeoff when supprting less features)
+
 ## Frontend
 
 Features:
@@ -16,9 +22,13 @@ Features:
 
 TODO
 
-## E2e tests
+## Backlog
 
-TODO
+* [ ] `Dockerfile` that builds frontend or frontend and backend
+* [ ] CI that uploads a demo image to Docker/Quay
+* [ ] e2e tests
+* [ ] Deployment via `kubectl`?
+* [ ] Deployment via `helm`?
 
 ## More information about Dynamic Plugins
 
