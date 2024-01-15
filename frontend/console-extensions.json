@@ -5,7 +5,7 @@
       "id": "example",
       "perspective": "admin",
       "section": "home",
-      "name": "%plugin__jerolimov-console-template~Plugin Example%",
+      "name": "%plugin__console-plugin-template~Plugin Example%",
       "href": "/example"
     }
   },

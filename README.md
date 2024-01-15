@@ -6,6 +6,25 @@
 * To have a playground to build mono-repo projects with more then one frontend or with an backend
 * To use less dependencies in the origin template (that's a difficult goal and is more a tradeoff when supprting less features)
 
+## Development / How to use it locally?
+
+You need to have at least two terminals open:
+
+```
+cd frontend
+npm install
+npm start     # runs a local webpack dev server that serves just the plugin frontend
+```
+
+Start your OpenShift Console
+
+```
+cd console    # clone from https://github.com/openshift/console
+./build.sh
+source ./contrib/oc-environment.sh
+./bin/bridge.sh -plugins console-plugin-template=http://localhost:9001
+```
+
 ## Frontend
 
 Features:

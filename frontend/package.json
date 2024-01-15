@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "@jerolimov/console-template",
+  "name": "@jerolimov/console-plugin-template",
   "version": "0.1.0",
   "description": "",
   "author": "Christoph Jerolimov",
   "consolePlugin": {
-    "name": "jerolimov-console-template",
+    "name": "console-plugin-template",
     "version": "0.1.0",
     "exposedModules": {
       "examples": "./examples"
