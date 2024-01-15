@@ -4,15 +4,19 @@
 
 Features:
 
-* [x] Strict(er) TypeScript configuration
-* [x] PatternFly components
-* [x] Extraction of localization strings
+* [x] TypeScript (similar to the official template, this template contains some stricter rules)
+* [x] Reuse the official `dynamic-plugin-sdk` and `dynamic-plugin-sdk-webpack` dependencies
+* [x] PatternFly components (for the demo, you can remove or replace this if needed)
+* [x] i18n support (script to extract localization from TSX into JSON files)
 * [ ] Linter (ESLint)
 * [ ] Auto formatter (Prettier)
 * [ ] Unit tests
-* [ ] E2E tests
 
 ## Backend
+
+TODO
+
+## E2e tests
 
 TODO
 
